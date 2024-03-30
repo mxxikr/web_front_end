@@ -1,6 +1,6 @@
 # 📂 RapidD3.js
 
-RapidD3.js 학습 코드 정
+RapidD3.js 학습 코드 정리
 
 </br>
 
