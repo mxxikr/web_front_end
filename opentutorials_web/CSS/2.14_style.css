@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+a {
+    color: black;
+    /* text-decoration: none; */
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ol{
+    padding-left: 33px;
+}
+#grid #article{
+    padding-left:25px;;
+}
+@media(max-width: 800px){
+    #grid{
+        display: block;
+    }
+    ol{
+        border-right: none;
+    }
+    h1{
+        border-bottom: none;
+    }
+}
+
+/*
+    link 태그 사용해 css 파일 연결 시 코드 중복 제거 효과
+    코드 양 줄어 인터넷 사용료 줄이는 경제적 효과 
+    웹페이지 안에 css코드를 내장하는 것이 네트워크적인 측면에서는 효율적임 -> 적은 트래픽 사용
+    BUT, css 파일을 캐싱함으로써 여러개의 파일을 별도로 두고 다운로드 받는 것이 더 효율적
+    -> 파일을 한번 다운 받으면 바뀌기 전까지 host컴퓨터에 저장했다가 파일을 불러옴(네트워크 사용없이 불러오기 가능) -> 속도 높일 수 있음
+*/

@@ -1,0 +1,33 @@
+<!--
+    반응형 디자인
+    화면의 크기에 따라서 웹 페이지의 각 요소들이 반응해서 동작
+-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            div{
+                border: plum solid 10px;
+                font-size: 40px;
+            }
+            @media(min-width:800px) { /* screen width > 800px 일때 중괄호 안의 div 태그 동작 */
+                div{
+                    display:none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Responsive
+        </div>
+    </body>
+</html>
+<!--
+    화면의 크기에 따라서 어떤 html 요소를 보였다 안보였다 설정 -> 화면에 따라 디자인을 다르게함
+    -> 미디어 쿼리
+-->
+
+<!---->

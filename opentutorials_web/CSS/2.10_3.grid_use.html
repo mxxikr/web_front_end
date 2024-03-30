@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #grid{
+            border: salmon 5px solid;
+            display: grid;
+            grid-template-columns: 150px 1fr; /* NAVIGATION:100px사용, ARTICLE:1fr사용 */
+        }
+        div{
+            border: steelblue 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid" > <!--부모 태그에 id값 지정-->
+        <div>NAVIGATION_D</div> <!--두개의 태그를 나란히 배치 혹은 어떠한 배치를 하고 싶을 때 감싸는 부모 태그 필요-->
+        <div>종속형 시트 또는 캐스케이딩 스타일 시트는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.</div>
+    </div>
+</body>
+</html>
+<!--
+    grid 속성값 사용
+    두개의 태그를 나란히 배치 혹은 어떠한 배치를 하고 싶을 때 사용 
+    -> 감싸는 부모 태그 필요
+    -> grid를 알아보기 위해 각각 태그의 부피감을 알아야함
+-->
+
+<!--
+    fr
+    화면 전체를 쓰게 자동 조정하는 단위
+    화면창 움직이면 비율대로 자동 조정
+    1fr 1fr : 1:1 비율
+    2fr 1fr : 화면 전체를 3으로 두고 2:1 비율
+
+    px
+    크기를 지정하는 단위
+-->

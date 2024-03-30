@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>WEB</title>
+        <meta charset="utf-8">
+        <style>/*여러개의 선택자를 통해서 하나의 태그를 공동으로 제어할 수 있음*/
+            a { /*선택자(selector)*/
+                color: black;/*페이지의 모든 컬러를 블랙으로 설정*/
+                text-decoration: none; /*밑줄을 없애는 속성*/
+            }
+            h1 {
+                font-size: 60px; /*폰트 크기 지정해주는 property*/
+                text-align: center; /*정렬하는 property*/
+            }
+            #active{ /*active가 saw보다 뒤에 등장했음에도 불구하고 선택자가 선택*/
+                color: red;
+            }
+            .saw { /*웹페이지에 있는 모든 class가 saw인 태그를 선택하는 특수한 기호(.)사용*/
+                color: gray;
+            }     
+        </style>
+    </head>
+    <body>
+        <h1><a href="1.15_web_index.html">WEB</a></h1>
+        <ol>
+            <li><a href="1.15_web_1.html" class="saw">HTML</a></li> <!--html 속성 : class 값을 갖는 saw 태그 생성-->
+            <li><a href="1.15_web_2.html" class="saw" id="active">CSS</a></li> <!--id 값이 active인 값을 선택-->
+            <li><a href="1.15_web_3.html">JavaScript</a></li>
+        </ol>
+        <h2>WEB이란 무엇인가?</h2>
+        <img src="https://cdn.guidingtech.com/media/assets/WordPress-Import/2016/06/shutterstock_112158140.jpg" width="450">
+        <p style="margin-bottom:20px;"><strong>월드 와이드 웹<u>(World Wide Web, WWW, W3)</u></strong>은 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다.<br>
+        간단히 <strong>웹(Web)</strong>이라 부르는 경우가 많다.<br></p>
+        <p>이 용어는 인터넷과 동의어로 쓰이는 경우가 많으나 엄격히 말해 서로 다른 개념이다.<br>
+        웹은 전자 메일과 같이 인터넷 상에서 동작하는 하나의 서비스일 뿐이다.</p>
+        그러나 1993년 이래로 웹은 인터넷 구조의 절대적 위치를 차지하고 있다.<br>
+        인터넷에서 HTTP 프로토콜, 하이퍼텍스트, HTML형식 등을 사용하여 그림과 문자를 교환하는 전송방식을 말하기도 한다.<br>
+        <p style="margin-top : 40px;"><a href="https://ko.wikipedia.org/wiki/%EC%9B%94%EB%93%9C_%EC%99%80%EC%9D%B4%EB%93%9C_%EC%9B%B9" target="_blank" title="Wiki URL">참고 : 위키백과</a></p>
+    </body>
+</html>
+
+<!--
+    id 선택자
+    class 선택자와 동시 사용시 id 선택자의 우선순위가 더 높음
+    선택자 사용시 앞에 #붙임
+    id값은 한번만 사용해야함 중복사용 불가
+    유일무이한 값
+    구체적인 값이기 때문에 우선순위가 높음
+-->
+<!--
+    [선택자 우선순위]
+
+    tag < class < id
+    동일한 선택자 사용시 가장 마지막에 나오는 선택자의 우선순위가 가장 높음
+-->
